@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- css 样式 -->
+<style rel="stylesheet" type="text/css">
+    /* 利用 flex 布局 不需要盒子本身宽高 但需要父级盒子高度*/
+    .container {
+        display: flex;
+        align-items: center;/* 垂直居中 */
+        justify-content: center; /* 水平居中 */
+        height:100vh; /* 父元素高度需设置 */
+    }
+    .container div {
+        width: 200px; /* 宽高可以不设置 */
+        height: 200px;
+        background-color: greenyellow;
+    }
+</style>
+<!-- html 结构 -->
+<div class="container">
+    <div>利用 flex 布局进行水平垂直居中</div>
+</div>
+
+</body>
+</html>
